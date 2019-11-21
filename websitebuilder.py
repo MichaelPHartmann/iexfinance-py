@@ -47,6 +47,12 @@ iex_forex_functions = {
 'forex_historical':'Returns a list of the historical exchange rates for the requested currency pair.'
 }
 
+# IEX - MARKET
+iex_market_functions = {
+'economic_data':'Returns the latest figure for the requested symbol. Duplicate of commodity_data.',
+'commodity_data':'Returns the latest figure for the requested symbol. Duplicate of economic_data'
+}
+
 # USGOV - FRED
 usgov_fred_functions = {
 'fred_series':'Returns time series historical data for the requested FRED data.',
