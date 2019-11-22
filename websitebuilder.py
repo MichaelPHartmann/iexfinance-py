@@ -1,5 +1,6 @@
 # List of all available functions grouped by package and sub-package
 
+
 # IEX - STOCK
 iex_stock_functions = {
 'balance_sheet':'Returns the balance sheet fincancial statement for the requested stock.',
@@ -60,3 +61,18 @@ usgov_fred_functions = {
 'geofred_regional_series':'Returns the historical, geographically organized time series data for the requested FRED data.',
 'get_yield':'Returns government treasury bond yields. Organized in Python dictionary format by bond length.'
 }
+
+
+with open('website.html', 'w') as file:
+    for key, value in iex_stock_functions.items():
+        function_entry = f'<heading>{key}<heading> \n <div id=divline></div> \n <t>{value}</t> \n <br> \n <br> \n'
+        file.write(function_entry)
+    for key, value in iex_forex_functions.items():
+        function_entry = f'<heading>{key}<heading> \n <div id=divline></div> \n <t>{value}</t> \n <br> \n <br> \n'
+        file.write(function_entry)
+    for key, value in iex_market_functions.items():
+        function_entry = f'<heading>{key}<heading> \n <div id=divline></div> \n <t>{value}</t> \n <br> \n <br> \n'
+        file.write(function_entry)
+    for key, value in usgov_fred_functions.items():
+        function_entry = f'<heading>{key}<heading> \n <div id=divline></div> \n <t>{value}</t> \n <br> \n <br> \n'
+        file.write(function_entry)
