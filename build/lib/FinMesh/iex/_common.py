@@ -9,12 +9,14 @@ def arg_to_bool(string):
     else:
         return False
 
-def prepend_iex_url():
+def prepend_iex_url(endpoint='stock'):
     sandboxState = arg_to_bool(os.getenv('SANDBOX'))
+    accepted_endpoints = ['stock','fx','data-points/market']
+    assert endpoint in accepted_endpoints, 'Please enter a valid endpoint!'
     if sandboxState is True:
-        url = 'https://sandbox.iexapis.com/stable/stock/'
+        url = f'https://sandbox.iexapis.com/stable/{endpoint}/'
     else:
-        url = 'https://cloud.iexapis.com/stable/stock/'
+        url = f'https://cloud.iexapis.com/stable/{endpoint}/'
     return url
 
 def append_iex_token(url):

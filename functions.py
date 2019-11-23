@@ -63,7 +63,7 @@ usgov_fred_functions = {
 }
 
 
-with open('website.html', 'w') as file:
+"""with open('website.html', 'w') as file:
     for key, value in iex_stock_functions.items():
         function_entry = f'<heading>{key}<heading> \n <div id=divline></div> \n <t>{value}</t> \n <br> \n <br> \n'
         file.write(function_entry)
@@ -75,4 +75,4 @@ with open('website.html', 'w') as file:
         file.write(function_entry)
     for key, value in usgov_fred_functions.items():
         function_entry = f'<heading>{key}<heading> \n <div id=divline></div> \n <t>{value}</t> \n <br> \n <br> \n'
-        file.write(function_entry)
+        file.write(function_entry)"""

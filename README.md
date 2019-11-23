@@ -16,6 +16,10 @@ In the future, this package will be updated with new financial and economic APIs
 
 ## Installation
 ---
+FinMesh is available publicly from [PYPI][https://pypi.org/project/FinMesh/] and can be installed and updated through a command line pip. Because the package is still growing and changing be sure to update often or check the PYPI page for possible updates.
+
+
+
 The following dependencies are used in FinMesh:
 - OS
 - CSV
@@ -43,21 +47,21 @@ The name of the function shall be the name of the endpoint.
 The function shall accept all variables for a given endpoint using the same variable names per the documentation.
 Differences between IEX cloud documentation and this API should be considered errors. Please raise an issue if you notice discrepancies.
 
-Specific documentation for every IEX function is not available but a list HERE can show you what options there are and the IEX docs will give you a full run down of the parameters. In general, to set a parameter you can set the parameter name equal to the desired output.
+Specific documentation for every IEX function is not available but a list [HERE][https://michaelphartmann.github.io/function_list.html] can show you what options there are and the IEX docs will give you a full run down of the parameters. In general, to set a parameter you can set the parameter name equal to the desired output.
 
 ## Contact
 ---
 If you would like to reach out, feel free to connect with me one of three ways:
 
-1. [On GitHub][1]
+1. [On GitHub][4]
 
-2. [On LinkedIn][2]
+2. [On LinkedIn][5]
 
-3. [Via Email][3]
+3. [Via Email][6]
 
 If there are issues, be it major or semantic, please open an issue on GitHub.
 
 
-[1]: https://github.com/MichaelPHartmann
-[2]: https://www.linkedin.com/in/michael-hartmann/
-[3]: MichaelPeterHartmann94@gmail.com
+[4]: https://github.com/MichaelPHartmann
+[5]: https://www.linkedin.com/in/michael-hartmann/
+[6]: MichaelPeterHartmann94@gmail.com
